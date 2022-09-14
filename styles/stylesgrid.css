@@ -75,11 +75,13 @@
 }
 .h2{
     background-color: rgb(107, 211, 230);
+    font-size: 22px;
 }
 .accede{
     background-color: rgb(217, 173, 90);
     border-radius: 05px;
     padding: 08px;
+    font-size: 20px;
 }
 .footer{
     color: rgb(98, 96, 96);
