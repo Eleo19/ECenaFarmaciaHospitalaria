@@ -26,7 +26,7 @@ header{
     border: 05px solid;
     border-top: 05px solid coral;
     border-bottom: 05px solid rgb(232, 232, 84);
-    border-right: 05px solid rgb(46, 36, 224);
+    border-right: 05px solid rgb(11, 11, 245);
     border-left: 05px solid rgb(63, 172, 63);
     margin-left: 370px;
 }
@@ -37,7 +37,7 @@ h2{
 nav ul{
  list-style-type: none;
  display: inline-block;
- background-color: rgb(22, 73, 224);
+ background-color: rgb(248, 249, 253);
  text-align: center;
  font-size: 17px;
  margin-left: 370px;
@@ -52,7 +52,7 @@ nav ul{
 .lista{
     display: inline-block; 
     margin: 12px 12px 10px 12px;
-    color: rgb(42, 180, 202);
+    color: rgb(107, 230, 249);
     cursor: pointer; 
     /*con el cursor, hafgo que aparezca una manito cuando pasa por encima de los elementos a*/
 }
