@@ -9,9 +9,8 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vh;
     justify-content: space-between;
+    height: 100vh;
 }
 header{
     color: rgb(255, 255, 255);
@@ -84,19 +83,37 @@ header{
     border-radius: 05px;
     padding: 08px;
     font-size: 20px;
+    margin-top: 10px;
+}
+.form{
+    margin-bottom: 10px;
+}
+.card{
+    margin-top: 15px;
+    width: 200px;
+    height: 300px;
+    margin-bottom: 10px;
 }
 .footer{
     color: rgb(98, 96, 96);
-    grid-area: footer;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     background-color: rgb(39, 244, 189);
+}
+h5{
+    font-size: 12px;
+    align-items: flex-start;
+}
+.fotred{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
 }
 .listaRedes{
     list-style-type: none;
     display: inline-block;
     display: flex;
+    justify-content: center;
 }
 .redes{
     width: 40px;

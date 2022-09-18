@@ -9,52 +9,88 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/stylesgrid.css">
   </head>
-<body class="body">
-  <header class="header">
-    <h1 class="tituloSitio">ATAJOS Y HERRAMIENTAS PARA FARMACEUTICOS HOSPITALARIOS</h1>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-       <a class="navbar-brand" href="#">HERRAMIENTAS</a>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul class="lista dropdown-menu">
-         <li class="lis nav-item"><a class="list dropdown-item"  href="../pages/home.html" >Home</a></li>
-         <li class="lis nav-item"><a class="list dropdown-item"  href="../pages/linkinteres.html">Links de interes</a></li>
-         <li class="lis nav-item"><a class="list dropdown-item"  href="../pages/tablas.html">Tablas</a></li>
-         <li class="lis nav-item"><a class="list dropdown-item"  href="../pages/calculadoras.html">Calculadoras</a></li>
-         <li class="lis nav-item"><a class="list dropdown-item"  href="../pages/contacto.html">Contacto</a></li>
-       </ul>
-      </div>
-     </nav>
-    <a href="../index.html">
-      <img class="logoImagen"src="../images/young-woman-pharmacist-at-pharmacy.jpg" width="600px" height="300px" alt="imagen farmaceutico"/>
-    </a>
- </header>
+  <body class="body container-fluid">
+    <header>
+     <section class="row">
+      <section class="col">
+       <h1 class="tituloSitio">ATAJOS Y HERRAMIENTAS PARA EL FARMACEUTICO HOSPITALARIO</h1>
+      </section>
+     </section>
+     <section class="row">
+      <section class="col">
+       <nav class="linksHeader navbar navbar-expand-md navbar-warning bg-warning">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/linkinteres.html">Links de Interes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/tablas.html">Tablas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/calculadoras.html">Calculadoras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+     </section>
+    </section>
+    <section class="row">
+      <section class="col-sm-12 col-md-8">
+        <a href="../index.html">
+          <img class="logoImagen"src="../images/young-woman-pharmacist-at-pharmacy.jpg" alt="imagen farmaceutico"/>
+        </a> 
+      </section>
+    </section>
+  </header>
      <h3>Calculadora para clearence renal</h3>
      <iframe src="https://www.senefro.org/modules.php?name=calcfg" frameborder="0"></iframe>
      <h3>Calculadora dosis de medicamentos</h3>
      <iframe src="https://www.fisterra.com/ayuda-en-consulta/calculos/calculos-dosis-medicamento-mg-dosis/" frameborder="0"></iframe>
- <footer class="footer">
-      <h4>Derechos reservados</h4> 
-      <h5>Ultima actualizacion: agosto 2022</h5>
-      <h4>Contacto en redes:</h4> 
-     <!--aca para poner el logo que me lleve a cada red tengo que poner img dentro de a, en a popngo la direccion y en img la imagenque tengo en mi carpeta-->
-    <ul>  
-     <a  href="https://www.instagram.com">
-         <img src="../images/logo instagram.png" alt="logo instagram" width="20px" height="20px">
-       </a>
-       <a  href="https: www.facebook.com">
-        <img src="../images/logo facebook.png" alt="logo facebook" width="20px" height="20px">
-       </a>
-       <a  href="https: www.twitter.com">
-        <img src="../images/logo twitter.png" alt="logo" width="20px" height="20px">
-       </a>
-      </ul>   
-     <!--siempre pongo en el alt la descripcion de las imagenes para que pueda ser leido para no videntes-->
+     <footer class="footer">
+      <section class="row">
+        <section class="col">
+          <h5>Derechos reservados</h5>
+          <h5>Última actualización: Septiembre 2022</h5>
+        </section>
+      </section>
+      <section class="row">
+        <section class="col">
+          <h3 class="fotred">
+            Encontranos en las redes
+          </h3>
+          <ul class="listaRedes">  
+            <a  href="https://www.instagram.com">
+                <img class="redes" src="../images/logo instagram.png" alt="logo instagram">
+              </a>
+              <a  href="https://www.facebook.com">
+               <img class="redes" src="../images/logo facebook.png" alt="logo facebook">
+              </a>
+              <a  href="https://www.twitter.com">
+               <img class="redes" src="../images/logo twitter.png" alt="logo twitter">
+              </a>
+             </ul>
+        </section>
+      </section>
     </footer>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-</body>
-</html>
+      <!-- JavaScript Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+    </html>
