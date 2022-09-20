@@ -123,6 +123,18 @@ header{
     height: 300px;
     margin-bottom: 10px;
 }
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.logos{
+height: 190px;
+}
+.siglas{
+    height: 80px;
+}
 .footer{
     color: rgb(98, 96, 96);
     display: flex;
@@ -148,6 +160,13 @@ h5{
     width: 40px;
     height: 40px;
 }
+@media screen and (max-width: 480px){
+ .cruz{
+    width: 0px;
+    height: 0px;
+ }
+}
+    
 /*@media screen and (max-width:480px){
     .body{
         background-color: rgb(107, 211, 230);
