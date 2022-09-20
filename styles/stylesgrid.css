@@ -5,12 +5,10 @@
     }
 .body{
     background-image: url(../images/imagen\ medicamentos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
 }
 header{
     color: rgb(255, 255, 255);
@@ -26,6 +24,35 @@ header{
     display: flex;
     text-align: center;
     text-decoration: underline;
+}
+.cruz{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    animation-name: cruz;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+/*.cruz:hover{
+  transform: rotate(100deg);
+}*/
+@keyframes cruz{
+    0%{
+       transform: rotate(0deg); 
+    }
+    20%{
+        transform: rotate(90deg)
+    }
+    50%{
+        transform: rotate(180deg)
+    }
+    75%{
+        transform: rotate(270deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
 }
 .linksHeader{
     border-radius: 10px;
@@ -77,6 +104,7 @@ header{
     background-color: rgb(107, 211, 230);
     font-size: 22px;
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 .accede{
     background-color: rgb(217, 173, 90);
@@ -84,6 +112,7 @@ header{
     padding: 08px;
     font-size: 20px;
     margin-top: 10px;
+    text-align: center;
 }
 .form{
     margin-bottom: 10px;
