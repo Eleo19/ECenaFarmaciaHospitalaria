@@ -6,6 +6,7 @@
 .body{
     background-image: url(../images/imagen\ medicamentos.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
