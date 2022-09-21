@@ -24,6 +24,7 @@ header{
     display: flex;
     text-align: center;
     text-decoration: underline;
+    font-weight: bold;
 }
 .cruz{
     width: 80px;
@@ -59,6 +60,7 @@ header{
     width: 600px;
     margin-top: 20px;
     color: #000;
+    font-weight: bold;
 }
 /*.lista{
     list-style-type: none;
@@ -149,6 +151,23 @@ h5{
     font-size: 15px;
     display: flex;
     justify-content: center;
+}
+.formulariocontacto{
+    color: rgb(255, 255, 255);
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+.completar{
+    width: 600px;
+}
+.botoncontacto{
+    width: 100px;
+}
+#comentarios{
+    width: 600px;
+    height: 300px;
 }
 .listaRedes{
     list-style-type: none;
