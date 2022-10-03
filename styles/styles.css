@@ -1,109 +1,144 @@
-/*con el asterisco hago que todos los elementos raiz de mi pagina sigan esta configuiracion. Con esta configuracion hago que los margenes de mi sitio se unifiquen para todos los navegadores*/
-/*puedo hacerlo con asterisco o con body*//*tambien podemos estableces tipografia o lo que necesitemos que todo el archivo respete*/
 * {
-margin: 0;
-padding: 0;
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-body{
-    background-image: url(../images/imagen\ medicamentos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;  
-}
-header{
-    color: white;
-    margin: 0;
-}
-.tituloSitio{
-    font-size: 30px;
-    margin: 0;
-    text-align: center;
-    text-decoration: underline;
-    line-height: 40px;
-} /*las clases van sin espacios y se llaman con un punto al principio*/
-.logoImagen{
-    border-radius: 05px;
-    border: 05px solid;
-    border-top: 05px solid coral;
-    border-bottom: 05px solid rgb(232, 232, 84);
-    border-right: 05px solid rgb(11, 11, 245);
-    border-left: 05px solid rgb(63, 172, 63);
-    margin-left: 370px;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-h2{
+.body {
+  background-image: url(../images/imagen\ medicamentos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "header header header" "section section section" "footer footer footer";
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 520px 200px 100px;
+  display: flex;
+  flex-direction: column;
+  height: 820px;
+  justify-content: space-between;
+}
+
+.header {
+  color: rgb(255, 255, 255);
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  height: 520px;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.tituloSitio {
+  margin: 15px 15px 15px 15px;
+  background-color: rgb(107, 211, 230);
+  display: flex;
+  text-align: center;
+}
+
+.lista {
+  list-style-type: none;
+  display: flex;
+  background-color: rgb(249, 249, 252);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.list {
+  display: inline-block;
+  margin: 12px 12px 10px 12px;
+  color: rgb(15, 168, 195);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lis {
+  display: inline-block;
+}
+
+.logoImagen {
+  border-radius: 5px;
+  border: 5px solid;
+  border-top: 5px solid coral;
+  border-bottom: 5px solid rgb(232, 232, 84);
+  border-right: 5px solid rgb(46, 36, 224);
+  border-left: 5px solid rgb(63, 172, 63);
+}
+
+.section {
+  color: rgb(255, 255, 255);
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.h2 {
+  background-color: rgb(107, 211, 230);
+  font-size: 22px;
+}
+
+.accede {
+  background-color: rgb(217, 173, 90);
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.footer {
+  color: rgb(98, 96, 96);
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(39, 244, 189);
+}
+
+@media screen and (max-width: 480px) {
+  .body {
+    background-color: rgb(107, 211, 230);
+    grid-template-areas: "header" "section" "footer";
+    background-image: none;
+    grid-template-rows: 3fr 3fr 1fr;
+    height: 100vh;
+  }
+  .header {
+    font-size: 11px;
+    text-decoration: none;
+  }
+  .tituloSitio {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .logoImagen {
+    width: 300px;
+    height: 200px;
+  }
+  .lis {
+    display: block;
+    text-align: center;
+    width: 300px;
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
+  }
+  .list {
+    font-size: 17px;
+  }
+  .section {
+    font-size: 10px;
     text-align: justify;
-}
-nav ul{
- list-style-type: none;
- display: inline-block;
- background-color: rgb(248, 249, 253);
- text-align: center;
- font-size: 17px;
- margin-left: 370px;
- margin-top: 0;
- font-weight: bold;
- width: 610px;
- border-radius: 05px 
-}
-.lis{
-    display: inline-block; 
-}
-.lista{
-    display: inline-block; 
-    margin: 12px 12px 10px 12px;
-    color: rgb(107, 230, 249);
-    cursor: pointer; 
-    /*con el cursor, hafgo que aparezca una manito cuando pasa por encima de los elementos a*/
-}
-section{
-    color: white;
-    width: 960px;
-    margin-left: 50px;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 100px;
-
-}
-.accede{
-    background-color: rgb(217, 173, 90);
-    border-radius: 05px;
-    padding: 08px;
-}
-article{
-    color: white;
-    width: 960px;
-    margin-left: 50px;
-    margin-top: 50px;
-    text-align: left;
-    font-size: 15px;
-    margin-bottom: 100px;
-}
-.tablas{
-    list-style-type: none;
-    font-size: 30px;
-    border-radius: 10px;
-    border-color: rgb(217, 173, 90);
-    border: 10px solid;
-    color: rgb(103, 100, 100);
-    background-color:rgb(217, 173, 90);
-}
-.formTitulo{
-    color: white;
-    margin-left: 10px;
-}
-form{
-    color: white;
-    font-size: 20px;
-    margin-left: 10px;
-    justify-content: space-around;
-}
-footer{
-    color: rgb(103, 100, 100);
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    height: 130px;
-}
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .footer {
+    align-items: center;
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */
