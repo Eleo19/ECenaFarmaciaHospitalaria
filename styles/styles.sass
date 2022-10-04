@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+.body{
+    background-image: url(../images/imagen\ medicamentos.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.tituloSitio{
+    margin: top 15px;
+    display: flex;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.cruz{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    animation-name: cruz;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+/*.cruz:hover{
+  transform: rotate(100deg);
+}*/
+@keyframes cruz{
+    0%{
+       transform: rotate(0deg); 
+    }
+    20%{
+        transform: rotate(90deg)
+    }
+    50%{
+        transform: rotate(180deg)
+    }
+    75%{
+        transform: rotate(270deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+.linksHeader{
+    border-radius: 10px;
+    width: 600px;
+    margin-top: 20px;
+    color: #000;
+    font-weight: bold;
