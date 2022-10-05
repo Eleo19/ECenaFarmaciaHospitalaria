@@ -158,12 +158,12 @@ header {
 }
 
 h5 {
-  font-size: 12px;
+  font-size: 16px;
   align-items: flex-start;
 }
 
 .fotred {
-  font-size: 15px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
 }
