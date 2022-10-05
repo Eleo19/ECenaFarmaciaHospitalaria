@@ -1,1 +1,209 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+header {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.tituloSitio {
+  margin: top 15px;
+  display: flex;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.cruz {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  -webkit-animation-name: cruz;
+          animation-name: cruz;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes cruz {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cruz {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.linksHeader {
+  border-radius: 10px;
+  width: 600px;
+  margin-top: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.logoImagen {
+  border-radius: 5px;
+  border: 5px solid;
+  border-top: 5px solid coral;
+  border-bottom: 5px solid rgb(232, 232, 84);
+  border-right: 5px solid rgb(46, 36, 224);
+  border-left: 5px solid rgb(63, 172, 63);
+  width: 600px;
+  height: 400px;
+}
+
+.body {
+  background-image: url(../images/imagen\ medicamentos.jpg);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section {
+  color: rgb(255, 255, 255);
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.slogan {
+  background-color: rgb(107, 211, 230);
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.accede {
+  background-color: rgb(217, 173, 90);
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form {
+  margin-bottom: 10px;
+}
+
+.card {
+  margin-top: 15px;
+  width: 200px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logos {
+  height: 190px;
+}
+
+.siglas {
+  height: 80px;
+}
+
+.footer {
+  color: rgb(98, 96, 96);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 244, 189);
+}
+
+h5 {
+  font-size: 12px;
+  align-items: flex-start;
+}
+
+.fotred {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.listaRedes {
+  list-style-type: none;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.redes {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .cruz {
+    width: 0px;
+    height: 0px;
+  }
+}
+.formulariocontacto {
+  color: rgb(255, 255, 255);
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.completar {
+  width: 600px;
+}
+
+.botoncontacto {
+  width: 100px;
+}
+
+#comentarios {
+  width: 600px;
+  height: 300px;
+}/*# sourceMappingURL=styles.css.map */

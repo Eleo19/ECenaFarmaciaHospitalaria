@@ -1,0 +1,52 @@
+.body{
+    background-image: url(../images/imagen\ medicamentos.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section{
+    color: rgb(255, 255, 255);
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    text-align: center;
+    font-size: 16px;
+}
+.slogan{
+    background-color: rgb(107, 211, 230);
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.accede{
+    background-color: rgb(217, 173, 90);
+    border-radius: 05px;
+    padding: 08px;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.form{
+    margin-bottom: 10px;
+}
+.card{
+    margin-top: 15px;
+    width: 200px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.logos{
+height: 190px;
+}
+.siglas{
+    height: 80px;
+}
