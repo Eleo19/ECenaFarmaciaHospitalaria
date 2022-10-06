@@ -1,15 +1,14 @@
 .footer{
     color: rgb(98, 96, 96);
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(39, 244, 189);
+    @extend %flexColum;
+    background-color: $colorFondoFooter;
 }
 h5{
     font-size: 16px;
     align-items: flex-start;
 }
 .fotred{
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
 }
@@ -24,10 +23,5 @@ h5{
     width: 40px;
     height: 40px;
 }
-@media screen and (max-width: 480px){
- .cruz{
-    width: 0px;
-    height: 0px;
- }
-}
+
     

@@ -2,8 +2,7 @@
     color: rgb(255, 255, 255);
 }
 .texto{
-    display: flex;
-    flex-direction: column;
+    @extend %flexColum;
 }
 .completar{
     width: 600px;

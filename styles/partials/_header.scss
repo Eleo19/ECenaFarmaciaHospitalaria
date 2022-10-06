@@ -5,8 +5,7 @@
     }
 header{
     color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
+    @extend %flexColum;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 15px;
@@ -56,10 +55,12 @@ header{
     .logoImagen{
         border-radius: 05px;
         border: 05px solid;
-        border-top: 05px solid coral;
-        border-bottom: 05px solid rgb(232, 232, 84);
-        border-right: 05px solid rgb(46, 36, 224);
-        border-left: 05px solid rgb(63, 172, 63);
+        border-top: map-get($coloresImagen, border-top);
+        border-bottom: map-get($coloresImagen, border-bottom);
+        border-right: map-get($coloresImagen, border-right);
+        border-left: map-get($coloresImagen, border-left);
         width: 600px;
         height: 400px;
     }
+    
+   

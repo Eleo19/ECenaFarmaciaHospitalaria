@@ -89,6 +89,12 @@ header {
   height: 400px;
 }
 
+@media screen and (max-width: 480px) {
+  .cruz {
+    width: 0px;
+    height: 0px;
+  }
+}
 .body {
   background-image: url(../images/imagen\ medicamentos.jpg);
   background-size: contain;
@@ -150,6 +156,44 @@ header {
   height: 80px;
 }
 
+@media screen and (max-width: 480px) {
+  .body {
+    background-color: rgb(107, 211, 230);
+    background-image: none;
+    height: 100vh;
+    width: 300px;
+  }
+  .header {
+    font-size: 11px;
+    text-decoration: none;
+  }
+  .linksHeader {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: #111;
+  }
+  .tituloSitio {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration: none;
+  }
+  .logoImagen {
+    width: 300px;
+    height: 200px;
+  }
+  .section {
+    font-size: 10px;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .footer {
+    align-items: center;
+    font-size: 10px;
+  }
+}
 .footer {
   color: rgb(98, 96, 96);
   display: flex;
@@ -163,7 +207,7 @@ h5 {
 }
 
 .fotred {
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
 }
@@ -180,12 +224,6 @@ h5 {
   height: 40px;
 }
 
-@media screen and (max-width: 480px) {
-  .cruz {
-    width: 0px;
-    height: 0px;
-  }
-}
 .formulariocontacto {
   color: rgb(255, 255, 255);
 }
