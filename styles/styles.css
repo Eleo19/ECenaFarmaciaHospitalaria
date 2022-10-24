@@ -1,3 +1,8 @@
+.texto, .footer, .section, .body, header {
+  display: flex;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +11,6 @@
 
 header {
   color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 15px;
@@ -89,25 +92,14 @@ header {
   height: 400px;
 }
 
-@media screen and (max-width: 480px) {
-  .cruz {
-    width: 0px;
-    height: 0px;
-  }
-}
 .body {
   background-image: url(../images/imagen\ medicamentos.jpg);
   background-size: contain;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
 .section {
   color: rgb(255, 255, 255);
-  grid-area: section;
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   height: 200px;
   text-align: center;
@@ -171,7 +163,6 @@ header {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    color: #111;
   }
   .tituloSitio {
     text-align: center;
@@ -196,8 +187,6 @@ header {
 }
 .footer {
   color: rgb(98, 96, 96);
-  display: flex;
-  flex-direction: column;
   background-color: rgb(39, 244, 189);
 }
 
@@ -228,11 +217,6 @@ h5 {
   color: rgb(255, 255, 255);
 }
 
-.texto {
-  display: flex;
-  flex-direction: column;
-}
-
 .completar {
   width: 600px;
 }
@@ -244,4 +228,9 @@ h5 {
 #comentarios {
   width: 600px;
   height: 300px;
+}
+
+.tablas {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
 }/*# sourceMappingURL=styles.css.map */
